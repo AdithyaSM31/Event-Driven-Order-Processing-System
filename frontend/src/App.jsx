@@ -167,10 +167,10 @@ function App() {
         ) : (
             <div className="grid gap-4">
                 {orders.map(order => (
-                    <div key={order.orderId} className="card" style={{ margin: 0, padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div key={order.id} className="card" style={{ margin: 0, padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div>
                             <div className="flex items-center gap-4" style={{ marginBottom: '8px' }}>
-                                <span style={{ fontWeight: 600 }}>#{order.orderId}</span>
+                                <span style={{ fontWeight: 600 }}>#{order.id}</span>
                                 <span className="status-badge">
                                     <span className={`status status-${order.status}`}>{order.status}</span>
                                 </span>
